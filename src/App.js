@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './main_logo.png';
+//import logo from './main_logo.png';
 import Navigation from './components/nav';
 import Jumbotron from './components/Jumbotron';
 import Footer from './components/Footer';
@@ -13,7 +13,7 @@ function App() {
       <Navigation />  
       <Jumbotron />
       <Footer />
-         
+       
       
       </div>
         
