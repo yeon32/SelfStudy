@@ -8,9 +8,6 @@ import firstpage_logo from "./images/firstpage_logo.gif";
 import Login from "./Login.js";
 
 
-import FirstPage from './components/FirstPage';
-import MainPage from './components/MainPage';
-
 function App() {
     return (
     <div className="App">
