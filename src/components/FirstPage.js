@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class FirstPage extends Component {
-
-  render() {
+function FirstPage() {
     return (
       
           <div>
@@ -13,6 +11,5 @@ class FirstPage extends Component {
 
   }
     
- }
   
   export default FirstPage;

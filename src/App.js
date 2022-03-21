@@ -1,20 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 //import { render } from '@testing-library/react';
 
 import FirstPage from './components/FirstPage.js';
 import MainPage from './components/MainPage.js';
 
-
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-
-    }
-  }
-
-  render() {
+function App() {
     return (
     <div className="App">
        <BrowserRouter> 
@@ -25,7 +16,7 @@ class App extends Component {
 
       );
      }
-    }
+ 
   
 
 export default App;
