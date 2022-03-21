@@ -2,8 +2,10 @@ import React from 'react';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';	
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import "./App.css";
-import logo from "./logo.gif";
+import styles from "./App.css";
+import logo from "./images/logo.png";
+import firstpage_logo from "./images/firstpage_logo.gif";
+import Login from "./Login.js";
 
 
 import FirstPage from './components/FirstPage';
@@ -18,8 +20,8 @@ function App() {
          <Container>
            <img
               src={logo}
-              width="30"
-              height="30"
+              width="20"
+              height="20"
               />
            <Navbar.Brand href="#home">공부는 셀프입니다</Navbar.Brand>
            <Nav className="me-auto">
@@ -29,8 +31,22 @@ function App() {
              </Nav>
              </Container>
              </Navbar>
+             </header>
+
+             <div className="LoginImageContainer">
+               <Login></Login>
+             </div>
+             
+            
+             <div className="FirstPageImageContainer">
+             <img
+                src={firstpage_logo}            
+                />
+        </div>
+            
+                     
       
-</header>
+
 {/*
        <BrowserRouter> 
        <Route exact path="/">
