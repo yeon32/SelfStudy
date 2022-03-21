@@ -1,23 +1,31 @@
-import React from 'react';
-//import logo from './main_logo.png';
-import Navigation from './components/nav';
-import Jumbotron from './components/Jumbotron';
-import Footer from './components/Footer';
-//import main_logo from './public/images/main_logo.png';
+import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+//import { render } from '@testing-library/react';
 
-import './App.css';
+import FirstPage from './components/FirstPage.js';
+import MainPage from './components/MainPage.js';
 
-function App() {
-  return (
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+  }
+
+  render() {
+    return (
     <div className="App">
-      <Navigation />  
-      <Jumbotron />
-      <Footer />
-       
-      
+       <BrowserRouter> 
+       <Route path="/" component={FirstPage} exact />
+       <Route path="/MainPage" component={MainPage} />
+       </BrowserRouter>
       </div>
-        
+
       );
      }
+    }
+  
 
 export default App;
