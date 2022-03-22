@@ -3,14 +3,11 @@
 }
 
 .FirstPageImageContainer {
-  margin-left: 60px;
-  margin-right: 50px;
-  margin-top: 30px;
-  margin-bottom: 60px;
   width: 130%;
   height: 130%;
 }
 
 .LoginImageContainer {
-  margin: center;
+  width: 20%;
+  height: 50%;
 }

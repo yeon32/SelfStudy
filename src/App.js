@@ -3,9 +3,12 @@ import { Navbar, Nav, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';	
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import styles from "./App.css";
+import Login from "./Login.js";
 import logo from "./images/logo.png";
 import firstpage_logo from "./images/firstpage_logo.gif";
-import Login from "./Login.js";
+
+//import FirstPage from './FirstPage.js';
+//import MainPage from './MainPage.js';
 
 
 function App() {
@@ -40,22 +43,14 @@ function App() {
                 src={firstpage_logo}            
                 />
         </div>
+
+        {/*}
+        <div>
+      <Route path="/" component={FirstPage} />
+      <Route path="/MainPage" component={MainPage} />
+    </div>*/}
             
-                     
-      
-
-{/*
-       <BrowserRouter> 
-       <Route exact path="/">
-         //첫페이지
-       </Route>
-       <Route path="/MainPage">
-         //메인페이지
-        </Route>
-       </BrowserRouter>*/}
-
-
-      </div>
+     </div>
     
       );
      }
