@@ -29,6 +29,7 @@ function Login() {
       <Form.Check label="Remember me" />
     </Col>
   </Form.Group>
+  <p className={"float-left"}><a href={"/signin"}>Sign in</a></p>    
 
   <Form.Group as={Row} className="mb-3">
     <Col sm={{ span: 10, offset: 2 }}>

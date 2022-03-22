@@ -27,8 +27,11 @@ function MainPage() {
                              </Navbar.Collapse>
                              </Container>
                              </Navbar>
-     
-     );
+    );
+    
+    <div>
+        00님, 문제를 내주세요!
+    </div>
 
   }
       
