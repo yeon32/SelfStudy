@@ -1,10 +1,13 @@
 import React from 'react';
+import { Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./images/logo.png";
+//import styles from "./App.css";
 
 
 function MainPage() {
     return (
-        <Navbar bg="light" expand="lg">
+     <Navbar bg="light" expand="lg">
             <Container>
             <img
               src={logo}
@@ -27,6 +30,7 @@ function MainPage() {
                              </Navbar.Collapse>
                              </Container>
                              </Navbar>
+ 
     );
     
     <div>
