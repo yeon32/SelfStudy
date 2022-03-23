@@ -11,10 +11,15 @@ import MainPage from './MainPage.js';
 function App() {
     return (
     <div className="App">
-      <FirstPage></FirstPage>
+      <FirstPage/>
+      <MainPage/>
       
-    
-   
+  {/*}   <BrowserRouter>
+      <Route path='/' component={FirstPage} />
+      <Route exact path='/MainPage' component={MainPage} />
+      </BrowserRouter>
+    */}   
+      
         </div>
       );
      }

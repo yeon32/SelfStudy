@@ -31,7 +31,7 @@ function FirstPage() {
                 
 
                <div className="LoginImageContainer">
-                 <Login></Login>
+                 <Login/>
                </div>
                
               

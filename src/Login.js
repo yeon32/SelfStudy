@@ -29,11 +29,11 @@ function Login() {
       <Form.Check label="Remember me" />
     </Col>
   </Form.Group>
-  <p className={"float-left"}><a href={"/signin"}>Sign in</a></p>    
+  <p className={"float-left"}><a href={"/Join"}>Created an Account</a></p>    
 
   <Form.Group as={Row} className="mb-3">
     <Col sm={{ span: 10, offset: 2 }}>
-      <Button type="submit">Sign in</Button>
+      <Button type="Login" href ={'/MainPage'}>Login</Button>
     </Col>
   </Form.Group>
 </Form>
