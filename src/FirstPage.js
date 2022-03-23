@@ -19,11 +19,11 @@ function FirstPage() {
                 width="20"
                 height="20"
                 />
-             <Navbar.Brand href="#home">공부는 셀프입니다</Navbar.Brand>
+             <Navbar.Brand>공부는 셀프입니다</Navbar.Brand>
              <Nav className="me-auto">
-               <Nav.Link href="#service">서비스소개</Nav.Link>
-               <Nav.Link href="#ranking">랭킹</Nav.Link>
-               <Nav.Link href="#problem">문제만들기</Nav.Link>
+               <Nav.Link href="/ServiceIntroduction">서비스소개</Nav.Link>
+               <Nav.Link href="/Ranking">랭킹</Nav.Link>
+               <Nav.Link href="/MakeProblem">문제만들기</Nav.Link>
                </Nav>
                </Container>
                </Navbar>
