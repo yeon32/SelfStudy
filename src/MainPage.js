@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./images/logo.png";
 //import styles from "./App.css";
+import Login from "./Login.js";
 
 
 function MainPage() {
@@ -31,10 +32,11 @@ function MainPage() {
                              </Navbar>
  
     );
-    
+   
     <div>
        <p>00님, 문제를 내주세요!</p>
     </div>
+  
 
   }
       
