@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./images/logo.png";
 import firstpage_logo from "./images/firstpage_logo.gif";
 
-import Login from "../Login.js";
+import Login from "./Login.js";
 import styles from './FirstPage.module.css';
 
 
@@ -29,7 +29,7 @@ function FirstPage() {
                </header>  
                 
 
-               <div className="LoginImageContainer">
+               <div>
                  <Login/>
                </div>
                

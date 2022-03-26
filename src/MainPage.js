@@ -1,40 +1,38 @@
 import React from 'react';
-import { Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
+import { InputGroup, Container, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from "./images/logo.png";
-//import styles from "./App.css";
-import Login from "./Login.js";
+import Header from './Header';
+import styles from './MainPage.module.css'
+
 
 
 function MainPage() {
     return (
-     <Navbar bg="light" expand="lg">
-            <Container>
-            <img
-              src={logo}
-              width="20"
-              height="20"
-              />
-                <Navbar.Brand>공부는 셀프입니다</Navbar.Brand>
-                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                 <Navbar.Collapse id="basic-navbar-nav">
-                     <Nav className="me-auto">
-                         <Nav.Link href="/Ranking">랭킹</Nav.Link>
-                         <NavDropdown title="마이페이지" id="basic-nav-dropdown">
-                             <NavDropdown.Item href="/action/3.1">회원정보 수정</NavDropdown.Item>
-                             <NavDropdown.Item href="/action/3.2">My 오답노트</NavDropdown.Item>   
-                             <NavDropdown.Item href="/action/3.3">My 스크랩</NavDropdown.Item>
-                             </NavDropdown>
-                             <Nav.Link href="/MakeProblem">문제만들기</Nav.Link>
-                             </Nav>
-                             </Navbar.Collapse>
-                             </Container>
-                             </Navbar>
- 
-    );
-   
-   
-
+      <><div>
+        <Header />
+        <h1> 00님,문제를 내주세요!</h1>
+      </div><Container>
+          <div>
+            <InputGroup size="lg" className={styles.filebutton}>
+              <FormControl
+                placeholder="파일 이름 작성하기"
+                aria-label="파일 이름 작성하기"
+                aria-describedby="basic-addon2" />
+              <Button variant="primary" id="button-addon2">
+                파일 생성
+              </Button>
+            </InputGroup>
+          </div>
+        </Container></>
+     
+      
+      
+                             
+                              
+                                   
+     
+    );    
+           
   }
       
   export default MainPage;
