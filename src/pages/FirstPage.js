@@ -1,10 +1,10 @@
 import React from 'react';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from "./App.css";
 import Login from "./Login.js";
 import logo from "./images/logo.png";
 import firstpage_logo from "./images/firstpage_logo.gif";
+import styles from './FirstPage.module.css';
 
 
 
@@ -14,11 +14,8 @@ function FirstPage() {
          <header>
       <Navbar bg="light" variant="light">
            <Container>
-             <img
-                src={logo}
-                width="20"
-                height="20"
-                />
+              <img src={logo} alt="로고" className={styles.logo}/>
+             
              <Navbar.Brand>공부는 셀프입니다</Navbar.Brand>
              <Nav className="me-auto">
                <Nav.Link href="/ServiceIntroduction">서비스소개</Nav.Link>
@@ -35,7 +32,7 @@ function FirstPage() {
                </div>
                
               
-               <div className="FirstPageImageContainer">
+               <div className={styles.firstpage_logo}>
                <img
                   src={firstpage_logo}            
                   />

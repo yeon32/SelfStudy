@@ -12,13 +12,9 @@ function App() {
     return (
     <div className="App">
       <FirstPage/>
-      <MainPage/>
+     {/*} <MainPage/> */}
       
-  {/*}   <BrowserRouter>
-      <Route path='/' component={FirstPage} />
-      <Route exact path='/MainPage' component={MainPage} />
-      </BrowserRouter>
-    */}   
+  
       
         </div>
       );
