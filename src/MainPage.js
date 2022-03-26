@@ -33,10 +33,7 @@ function MainPage() {
  
     );
    
-    <div>
-       <p>00님, 문제를 내주세요!</p>
-    </div>
-  
+   
 
   }
       

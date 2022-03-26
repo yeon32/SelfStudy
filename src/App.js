@@ -13,6 +13,11 @@ function App() {
     <div className="App">
       <FirstPage/>
      {/*} <MainPage/> */}
+
+     <Routes>
+       <Route path="/" element={<FirstPage />}/>
+       <Route patu="/MainPage" element={<MainPage />}/>
+     </Routes>
       
   
       

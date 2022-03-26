@@ -1,9 +1,11 @@
 import React from 'react';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from "./Login.js";
+
 import logo from "./images/logo.png";
 import firstpage_logo from "./images/firstpage_logo.gif";
+
+import Login from "../Login.js";
 import styles from './FirstPage.module.css';
 
 
