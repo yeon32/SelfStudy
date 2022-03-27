@@ -7,6 +7,7 @@ import firstpage_logo from "./images/firstpage_logo.gif";
 
 import Login from "./Login.js";
 import styles from './FirstPage.module.css';
+import Footer from "./Footer.js";
 
 
 
@@ -38,8 +39,11 @@ function FirstPage() {
                <img
                   src={firstpage_logo}            
                   />
+                  <Footer/>
                   </div>
                   </div>
+
+               
           
      );
 

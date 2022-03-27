@@ -3,6 +3,7 @@ import { InputGroup, Container, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import styles from './MainPage.module.css'
+import Footer from './Footer.js';
 
 
 
@@ -10,7 +11,8 @@ function MainPage() {
     return (
       <><div>
         <Header />
-        <h1> 00님,문제를 내주세요!</h1>
+        <div className={styles.text}>00님, 문제를 내주세요!</div>
+         
       </div><Container>
           <div>
             <InputGroup size="lg" className={styles.filebutton}>
@@ -23,7 +25,10 @@ function MainPage() {
               </Button>
             </InputGroup>
           </div>
-        </Container></>
+        </Container>
+        <Footer/></>
+
+
      
       
       
