@@ -1,6 +1,7 @@
 .firstpage_logo {
   margin-left: 800px;
   margin-top: 150px;
+  object-fit: cover;
 }
 
 .logo {

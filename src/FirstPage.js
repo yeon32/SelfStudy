@@ -21,7 +21,7 @@ function FirstPage() {
              
              <Navbar.Brand>공부는 셀프입니다</Navbar.Brand>
              <Nav className="me-auto">
-               <Nav.Link href="/ServiceIntroduction">서비스소개</Nav.Link>
+               <Nav.Link href="/Introduction">서비스소개</Nav.Link>
                <Nav.Link href="/Ranking">랭킹</Nav.Link>
                <Nav.Link href="/MakeProblem"><Badge bg="info">문제만들기</Badge></Nav.Link>
                </Nav>
