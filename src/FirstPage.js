@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Container} from 'react-bootstrap';
+import { Navbar, Nav, Container, Badge} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import logo from "./images/logo.png";
@@ -23,7 +23,7 @@ function FirstPage() {
              <Nav className="me-auto">
                <Nav.Link href="/ServiceIntroduction">서비스소개</Nav.Link>
                <Nav.Link href="/Ranking">랭킹</Nav.Link>
-               <Nav.Link href="/MakeProblem">문제만들기</Nav.Link>
+               <Nav.Link href="/MakeProblem"><Badge bg="info">문제만들기</Badge></Nav.Link>
                </Nav>
                </Container>
                </Navbar>
