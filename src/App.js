@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Link, Switch } from 'react-router-dom';
 
 import FirstPage from './FirstPage.js';
 import MainPage from './MainPage.js';
+import MakeProblem from './MakeProblem.js';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
      <Routes>
        <Route path="/" element={<FirstPage />}/>
        <Route path="/MainPage" element={<MainPage />}/>
+       <Route path="/MakeProblem" element={<MakeProblem />}/>
      </Routes>
       
   

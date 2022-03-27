@@ -31,7 +31,7 @@ function FirstPage() {
                 
 
                <div>
-                 <Login/>
+                {/*로그인 자리*/}
                </div>
                
               
@@ -39,8 +39,9 @@ function FirstPage() {
                <img
                   src={firstpage_logo}            
                   />
-                  <Footer/>
+                  
                   </div>
+                  <Footer/>
                   </div>
 
                

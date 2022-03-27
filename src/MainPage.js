@@ -26,14 +26,7 @@ function MainPage() {
             </InputGroup>
           </div>
         </Container>
-        <Footer/></>
-
-
-     
-      
-      
-                             
-                              
+        <Footer/></>                       
                                    
      
     );    
