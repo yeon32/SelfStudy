@@ -31,7 +31,7 @@ function FirstPage() {
                 
 
                <div>
-                {/*로그인 자리*/}
+                <Login />
                </div>
                
               
