@@ -17,7 +17,7 @@ function App() {
        <Route path="/" element={<FirstPage />}/>
        <Route path="/MainPage" element={<MainPage />}/>
        <Route path="/MakeProblem" element={<MakeProblem />}/>
-       <Route path="./Introduction" element={<Introduction />}/>
+       <Route path="/Introduction" element={<Introduction />}/>
      </Routes>
       
   

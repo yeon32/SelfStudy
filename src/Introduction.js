@@ -10,14 +10,7 @@ import Header from "./Header.js";
 
 function Introduction() {
     return (
-     <><div>
-        <Header />
-      </div>
-      <div className={styles.Introduction_image}>
-      <img
-            src={Introduction_image} />
-      </div>
-      </>
+     <Header />
 
 
 

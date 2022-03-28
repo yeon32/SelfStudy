@@ -1,17 +1,19 @@
 .loginas {
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 200px;
+  margin-left: 300px;
 }
 
 .auth_google_button {
   margin-top: 70px;
+  margin-left: 300px;
   width: 210px;
   height: 45px;
 }
 .auth_google.button_image {
 }
 .auth_naver_button {
-  margin-top: 70px;
+  margin-top: 20px;
+  margin-left: 300px;
   width: 210px;
   height: 45px;
 }

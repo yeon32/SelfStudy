@@ -7,14 +7,14 @@ import naver from "./images/naver.png";
 function Login() {
     return(
       <><div className={styles.loginas}>
-        <h1>Login as:</h1>
+        <h1>Logged in as:</h1>
       </div>
       <div className="auth_social_buttons" form style={{display: 'flex', flexDirection: 'column'}}>
 
           <button className={styles.auth_google_button}>
             <a href="/oauth2/authorization/google">
-              <div className={styles.auth_google_button_image}>
-                <img src={google} alt="google" />
+              <div className={styles.auth_naver_button_image}>
+              <img src={google} alt="google" />
               </div>
             </a>
           </button>
