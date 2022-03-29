@@ -20,7 +20,7 @@ function MainPage() {
                 placeholder="폴더 이름 작성하기"
                 aria-label="폴더 이름 작성하기"
                 aria-describedby="basic-addon2" />
-              <Button variant="info" id="button-addon2">
+              <Button variant="primary" id="button-addon2">
                 폴더 생성
               </Button>
             </InputGroup>

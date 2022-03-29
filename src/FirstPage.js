@@ -15,7 +15,9 @@ function FirstPage() {
     return (
       <div className="FirstPage">
          <header>
-      <Navbar bg="light" variant="light">
+
+      <div className={styles.navcolor}>     
+      <Navbar>
            <Container>
               <img src={logo} alt="로고" className={styles.logo}/>
              
@@ -23,10 +25,11 @@ function FirstPage() {
              <Nav className="me-auto">
                <Nav.Link href="/Introduction">서비스소개</Nav.Link>
                <Nav.Link href="/Ranking">랭킹</Nav.Link>
-               <Nav.Link href="/MakeProblem"><Badge bg="info">문제만들기</Badge></Nav.Link>
+               <Nav.Link href="/MakeProblem"><Badge bg="primary">문제만들기</Badge></Nav.Link>
                </Nav>
                </Container>
                </Navbar>
+               </div> 
                </header>  
                 
 

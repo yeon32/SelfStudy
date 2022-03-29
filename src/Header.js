@@ -6,8 +6,8 @@ import styles from './MainPage.module.css';
 
 function Header() {
     return (
-        <div>
-       <Navbar bg="light" expand="lg">
+        <div className={styles.navcolor}>
+       <Navbar expand="lg">
               <Container>
               <img src={logo} alt="로고" className={styles.logo}/>
                   <Navbar.Brand href="/MainPage">공부는 셀프입니다</Navbar.Brand>
@@ -20,7 +20,7 @@ function Header() {
                                <NavDropdown.Item href="/action/3.2">My 오답노트</NavDropdown.Item>   
                                <NavDropdown.Item href="/action/3.3">My 스크랩</NavDropdown.Item>
                                </NavDropdown>
-                               <Nav.Link href="/MakeProblem"><Badge bg="info">문제만들기</Badge></Nav.Link>
+                               <Nav.Link href="/MakeProblem"><Badge bg="primary">문제만들기</Badge></Nav.Link>
                                
                                </Nav>
                                </Navbar.Collapse>
