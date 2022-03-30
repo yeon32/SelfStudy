@@ -11,8 +11,17 @@
   margin-left: 700px;
   margin-top: 40px;
 }
+.content {
+  width: 600px;
+  margin-left: 400px;
+  margin-top: 40px;
+  height: 500px;
+}
+.hight {
+  height: 200px;
+  background-color: #dae2eb;
+}
 
 .makebutton {
   margin-left: 690px;
-  margin-top: 350px;
 }

@@ -25,20 +25,26 @@ function MakeProblem () {
       </Dropdown.Menu>
       </div>
       </Dropdown>
+
+      <div className={styles.content}>
+            <label>✔문제</label>
+            <div>
+                <input type="textarea" size={90} name="problem" placeholder="문제 작성하기"  className={styles.hight} />
+
+            </div>
+            <label>✔정답</label>
+            <div>
+                <input type="text" size={90}  name="solve" placeholder="정답 작성하기" className={styles.hight} />
+            </div>
+        </div>
         
-       
      <div className={styles.makebutton}>
       <Button variant="primary" size="lg">
         문제 만들기
       </Button>
      </div> 
 
-
-
-     </div>  
-        
-        
-        
+     </div>          
         </>
 
     );
