@@ -41,7 +41,7 @@ function FirstPage() {
    
           <div className={styles.firstpage_logo}>
              <img
-                src={firstpage_logo} /> 
+                src={firstpage_logo}  /> 
 
          </div>
        </div>

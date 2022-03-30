@@ -26,7 +26,7 @@ function MainPage() {
             </InputGroup>
           </div>
         </Container>
-        <Footer/></>                       
+        </>                       
                                    
      
     );    
