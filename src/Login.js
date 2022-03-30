@@ -13,42 +13,47 @@ import naver from "./images/naver.png";
 
 function Login() {
   return (
+    <>
+      <div class="container">
+      <div className={styles.text}>Login</div>
+      </div>
+    
+    
     <div className="Form">
-    <Form.Group as={Row} className="mb-3" controlId="formHorizontalId">
-      <Form.Label column sm={2}>
-        ID
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalId">
+        <Form.Label column sm={2}>
+          ID
         </Form.Label>
         <Col sm={10}>
           <Form.Control type="ID" placeholder="ID" />
-          </Col>
-          </Form.Group>
-          <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
-            <Form.Label column sm={2}>
-              Password
-              </Form.Label>
-              <Col sm={10}>
-                <Form.Control type="password" placeholder="Password" />
-                </Col>
-                </Form.Group>
-                <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
-                  <Col sm={{ span: 10, offset: 2 }}  form style={{display: 'flex', flexDirection: 'column'}}>
-                    <Form.Check label="Remember me" />
-                    <a href={"/Join"} >Created an Account</a>
-                    </Col>
-                    </Form.Group>   
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+        <Form.Label column sm={2}>
+          Password
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="password" placeholder="Password" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
+        <Col sm={{ span: 10, offset: 2 }} form style={{ display: 'flex', flexDirection: 'column' }}>
+          <Form.Check label="Remember me" />
+          <a href={"/Join"}>Created an Account</a>
+        </Col>
+      </Form.Group>
 
-                    
-                    <div className="auth_social_buttons" form style={{display: 'flex', flexDirection: 'column'}}>
-                    <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
-                    <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
-                    </div>
 
-                  <Form.Group as={Row} className="mb-3">
-                  <Col sm={{ span: 10, offset: 2 }}>
-                  <Button type="Login" href ={'/MainPage'}>Login</Button>
-                  </Col>
-                  </Form.Group>
-                  </div>
+      <div className="auth_social_buttons" form style={{ display: 'flex', flexDirection: 'column' }}>
+        <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+        <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
+      </div>
+
+      <div className={styles.loginbutton}>
+        <Button type="Login" href={'/MainPage'}>Login</Button>
+      </div>
+
+    </div></>
 
 
 
@@ -89,8 +94,6 @@ function Login() {
 </div></>*/
       
         
-
-
 
 
 /*} 민정님
