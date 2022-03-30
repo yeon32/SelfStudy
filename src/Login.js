@@ -1,4 +1,4 @@
-
+import { Form, Col, Row, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
@@ -13,8 +13,42 @@ import naver from "./images/naver.png";
 
 function Login() {
   return (
+    <div className="Form">
+    <Form.Group as={Row} className="mb-3" controlId="formHorizontalId">
+      <Form.Label column sm={2}>
+        ID
+        </Form.Label>
+        <Col sm={10}>
+          <Form.Control type="ID" placeholder="ID" />
+          </Col>
+          </Form.Group>
+          <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+            <Form.Label column sm={2}>
+              Password
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control type="password" placeholder="Password" />
+                </Col>
+                </Form.Group>
+                <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
+                  <Col sm={{ span: 10, offset: 2 }}  form style={{display: 'flex', flexDirection: 'column'}}>
+                    <Form.Check label="Remember me" />
+                    <a href={"/Join"} >Created an Account</a>
+                    </Col>
+                    </Form.Group>   
 
+                    
+                    <div className="auth_social_buttons" form style={{display: 'flex', flexDirection: 'column'}}>
+                    <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                    <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
+                    </div>
 
+                  <Form.Group as={Row} className="mb-3">
+                  <Col sm={{ span: 10, offset: 2 }}>
+                  <Button type="Login" href ={'/MainPage'}>Login</Button>
+                  </Col>
+                  </Form.Group>
+                  </div>
 
 
 
@@ -54,30 +88,7 @@ function Login() {
 
 </div></>*/
       
-         
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-
-      //구글/네이버 로그인 연동하면 MainPage로 넘어가도록 연동
+        
 
 
 

@@ -33,20 +33,25 @@ function FirstPage() {
           </header>
 
 
-          <div>
+         <div className={styles.flexcontainer}>
+          <div className={styles.login}>
              <Login />
           </div>
 
-
+   
           <div className={styles.firstpage_logo}>
              <img
                 src={firstpage_logo} /> 
 
+         </div>
        </div>
-      
-                  
+       </div>
 
-        </div></>     
+
+          
+
+          
+      </>     
           
      );
 

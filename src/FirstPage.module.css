@@ -1,13 +1,23 @@
-.firstpage_logo {
-  margin-left: 800px;
-  margin-top: 150px;
-  object-fit: cover;
-}
-
 .logo {
   width: 20px;
   height: 20px;
 }
 .navcolor {
   background: #dae2f0;
+}
+
+.flexcontainer {
+  display: flex;
+}
+.login {
+  width: 30%;
+  margin-left: 200px;
+  margin-top: 250px;
+}
+
+.firstpage_logo {
+  float: right;
+  margin-top: 250px;
+  margin-left: 200px;
+  size: 100%;
 }
