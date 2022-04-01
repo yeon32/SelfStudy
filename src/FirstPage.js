@@ -45,6 +45,7 @@ function FirstPage() {
 
          </div>
        </div>
+       <Footer />
        </div>
 
 

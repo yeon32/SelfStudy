@@ -3,6 +3,7 @@ import { InputGroup, Container, FormControl, Button, Dropdown } from 'react-boot
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import styles from './MakeProblem.module.css'
+import Footer from './Footer.js';
 
 function MakeProblem () {
     return (
@@ -43,6 +44,8 @@ function MakeProblem () {
         문제 만들기
       </Button>
      </div> 
+
+     {/*<Footer />*/}
 
      </div>          
         </>
