@@ -1,0 +1,19 @@
+.center{
+    width: 30%;
+    margin-left: 500px;
+    margin-top: 10px;
+  }
+  
+  .IN {
+    width: 20%;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .centersize{
+    width: 30%;
+    margin-left: 500px;
+    margin-top: 10px;
+    font-size: 30px;
+  }

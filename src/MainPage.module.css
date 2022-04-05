@@ -16,3 +16,18 @@
 .navcolor {
   background: #dae2f0;
 }
+.centersize{
+
+  width: 500px;
+  margin-left: 200px;
+  margin-top: 70px;
+  font-size: 100px;
+}
+
+.centersize1{
+
+  width: 700px;
+  margin-left: 250px;
+  margin-top: 70px;
+  font-size: 100px;
+}

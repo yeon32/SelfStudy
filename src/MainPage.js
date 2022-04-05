@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import styles from './MainPage.module.css'
 import Footer from './Footer.js';
+import { AiFillFolderOpen ,AiFillFolder} from "react-icons/ai";
+
+
 
 
 
@@ -27,8 +30,15 @@ function MainPage() {
           </div>
         </Container>
 
+        <Container>
+          
+          <AiFillFolderOpen className={styles.centersize} /> 
+          
+          
+        </Container>
+
         <Footer />
-        </>                       
+        </>                   
                                    
      
     );    
