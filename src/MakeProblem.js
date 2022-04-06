@@ -45,9 +45,11 @@ function MakeProblem () {
       </Button>
      </div> 
 
-     {/*<Footer />*/}
+    
 
-     </div>          
+     </div> 
+
+     <Footer />         
         </>
 
     );

@@ -4,6 +4,7 @@ import { AiFillFileAdd, AiFillEdit,AiFillFolderOpen } from "react-icons/ai";
 import IN from "./images/IN.png";
 import styles from "./Introduction.module.css";
 import Header from "./Header.js";
+import Footer from "./Footer.js";
 
 
 
@@ -44,7 +45,11 @@ function Introduction() {
           <AiFillFolderOpen />
           틀린 문제를 따로 보관하고
         </p>
-      </div></>
+      </div>
+
+      
+      <Footer />
+      </>
       );
 }
         export default Introduction;
