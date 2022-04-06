@@ -17,7 +17,7 @@ function Header() {
                            <Nav.Link href="/Ranking">랭킹</Nav.Link>
                            <NavDropdown title="마이페이지" id="basic-nav-dropdown">
                                <NavDropdown.Item href="/action/3.1">회원정보 수정</NavDropdown.Item>
-                               <NavDropdown.Item href="/action/3.2">My 오답노트</NavDropdown.Item>   
+                               <NavDropdown.Item href="/WrongAnswer">My 오답노트</NavDropdown.Item>   
                                <NavDropdown.Item href="/action/3.3">My 스크랩</NavDropdown.Item>
                                </NavDropdown>
                                <Nav.Link href="/MakeProblem"><Badge bg="primary">문제만들기</Badge></Nav.Link>
