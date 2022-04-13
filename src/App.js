@@ -1,6 +1,9 @@
-import React from 'react';
+import { React, Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';	
 import { BrowserRouter, Routes, Route, Link, Switch } from 'react-router-dom';
+import QuestionList from './components/QuestionList.js';
+import Data from './data.json';
+
 
 
 import FirstPage from './FirstPage.js';
@@ -21,12 +24,13 @@ function App() {
        <Route path="/Introduction" element={<Introduction />}/>
        <Route path="/WrongAnswer" element={<WrongAnswer />}/>
      </Routes>
-      
-  
-      
+    
         </div>
+
+       
       );
-     }
+     } 
+
  
   
 

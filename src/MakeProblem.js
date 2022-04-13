@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import styles from './MakeProblem.module.css'
 import Footer from './Footer.js';
+import QuestionList from './components/QuestionList.js';
+
 
 function MakeProblem () {
     return (
@@ -45,7 +47,6 @@ function MakeProblem () {
       </Button>
      </div> 
 
-    
 
      </div> 
 
