@@ -1,11 +1,11 @@
 import { React, Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';	
 import { BrowserRouter, Routes, Route, Link, Switch } from 'react-router-dom';
-import QuestionList from './components/QuestionList.js';
-import Data from './data.json';
 
 
 
+
+import Device from './Device.js';
 import FirstPage from './FirstPage.js';
 import Introduction from './Introduction.js';
 import MainPage from './MainPage.js';
