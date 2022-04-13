@@ -4,7 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import styles from './MakeProblem.module.css'
 import Footer from './Footer.js';
-import Users from './Users.js';
+import QuestionList from './component/QuestionList.js';
+
+
 
 
 function MakeProblem () {
@@ -39,7 +41,7 @@ function MakeProblem () {
             <div>
                 <input type="text" size={90}  name="solve" placeholder="정답 작성하기" className={styles.hight} />
             </div>
-            <Users></Users>
+            <QuestionList />
         </div>
         
      <div className={styles.makebutton}>
