@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { InputGroup, Container, FormControl, Button, Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import styles from './MakeProblem.module.css'
 import Footer from './Footer.js';
-
+import axios from 'axios';
 
 
 function MakeProblem () {
-    return (
+
+   // 요청받은 정보를 담아줄 변수 선언
+   const [ testStr, setTestStr ] = useState('');
+
+   // 변수 초기화
+   function callback(str) {
+     setTestStr(str);
+   }
+ 
+   // 첫 번째 렌더링을 마친 후 실행
+   useEffect(
+       () => {
+         axios({
+             url: '/MakeProblem',
+             method: 'GET'
+         }).then((res) => {
+             callback(res.data);
+         })
+       }, []
+   );
+  
+  return (
         <>
         <div className={styles.bgcolor}>
         <Header />

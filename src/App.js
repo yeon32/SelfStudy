@@ -7,6 +7,7 @@ import Introduction from './Introduction.js';
 import MainPage from './MainPage.js';
 import MakeProblem from './MakeProblem.js';
 import WrongAnswer from './WrongAnswer.js';
+import SolveProblem from './SolveProblem.js';
 
 
 
@@ -20,6 +21,7 @@ function App() {
        <Route path="/MakeProblem" element={<MakeProblem />}/>
        <Route path="/Introduction" element={<Introduction />}/>
        <Route path="/WrongAnswer" element={<WrongAnswer />}/>
+       <Route path="/SolveProblem" element={<SolveProblem />}/>
      </Routes>
         </div>
        
