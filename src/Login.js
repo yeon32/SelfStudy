@@ -1,69 +1,41 @@
-import { Form, Col, Row, Button} from 'react-bootstrap';
+import { Form, Col, Row} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
+import { Button, Input, Label } from 'reactstrap';
 import { Link } from "react-router-dom";
 import ReactDOM from 'react-dom';
+import LoginGoogle from 'react-google-login';
 
 import styles from "./Login.module.css";
 
 
+const Login = ({ history }) => {
 
-
-function Login() {
   return (
-    <>
-      <div class="container">
-      <div className={styles.text}>Login</div>
+      <div className="form-main">
+      <Form className="form-signin">
+          <h3 className="form-signin-heading">Login</h3>
+          <Label for="inputEmail" className="sr-only">Email address</Label>
+          <Input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus />
+          <Label for="inputPassword" className="sr-only">Password</Label>
+          <Input type="password" id="inputPassword" className="form-control"  placeholder="Password" required />
+
+          <LoginGoogle />
+
+          <Button className="styles.btn btn-lg btn-block" color="primary" type="button" onClick={() => { history.push('/MainPage') }}> Sign in</Button>
+      </Form>
+      
       </div>
-    
-    
-    <div className="Form">
-      <Form.Group as={Row} className="mb-3" controlId="formHorizontalId">
-        <Form.Label column sm={2}>
-          ID
-        </Form.Label>
-        <Col sm={10}>
-          <Form.Control type="ID" placeholder="ID" />
-        </Col>
-      </Form.Group>
-      <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
-        <Form.Label column sm={2}>
-          Password
-        </Form.Label>
-        <Col sm={10}>
-          <Form.Control type="password" placeholder="Password" />
-        </Col>
-      </Form.Group>
-      <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
-        <Col sm={{ span: 10, offset: 2 }} form style={{ display: 'flex', flexDirection: 'column' }}>
-          <Form.Check label="Remember me" />
-          <a href={"/Join"}>Created an Account</a>
-        </Col>
-      </Form.Group>
+  );
+
+}
 
 
-      <div className="auth_social_buttons" form style={{ display: 'flex', flexDirection: 'column' }}>
-        
-          <a href="/oauth2/authorization/google" class="btn btn-success active" role="button" >Google Login</a>
-        
-      </div>
-
-      <div className={styles.loginbutton}>
-        <Button type="Login" href={'/MainPage'}>Login</Button>
-      </div>
-
-    </div></>
-
-
-
-    );
-  }
   
       
   export default Login;
     
   
-
 
 
 

@@ -9,10 +9,8 @@ import MakeProblem from './MakeProblem.js';
 import WrongAnswer from './WrongAnswer.js';
 import SolveProblem from './SolveProblem.js';
 
-
-
 function App() {
-    return (
+  return (
       
     <div className="App">
      <Routes>
@@ -24,11 +22,17 @@ function App() {
        <Route path="/SolveProblem" element={<SolveProblem />}/>
      </Routes>
         </div>
-       
-      );
-     } 
 
- 
-  
+           
+      );
+    } 
 
 export default App;
+
+
+
+
+
+
+
+
