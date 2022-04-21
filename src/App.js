@@ -11,7 +11,7 @@ import SolveProblem from './SolveProblem.js';
 
 function App() {
   return (
-      
+   /*   
     <div className="App">
      <Routes>
        <Route path="/" element={<FirstPage />}/>
@@ -22,7 +22,8 @@ function App() {
        <Route path="/SolveProblem" element={<SolveProblem />}/>
      </Routes>
         </div>
-
+*/
+안녕하세요
            
       );
     } 
