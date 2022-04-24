@@ -14,7 +14,7 @@ function MainPage() {
     return (
       <><div>
         <Header />
-        <div className={styles.text}>00님, 문제를 내주세요!</div>
+        <div className={styles.text}>문제를 내주세요!</div>
          
       </div><Container>
           <div>
