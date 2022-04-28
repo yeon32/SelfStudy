@@ -31,24 +31,7 @@ function MakeProblem({ userId }) {
   if (error) return <p>Error!</p>;
 
   return (
-<<<<<<< HEAD
-      <div>
-        {item.map((item, index) => (
-              <div key={index}>
-              <p> {item.question_id}</p>
-              <p> {item.wrong}</p>
-              <p> {item.user_id} </p>
-              <p> {item.contents} </p>
-              <p> {item.answer} </p>
-              <p> {item.classification} </p>
-              </div>
-          ))}
-          
 
-        </div>
-  )
-      }
-=======
     <ul>
       <li>question_id: {user.question_id}</li>
       <li>wrong: {user.wrong}</li>
@@ -59,7 +42,7 @@ function MakeProblem({ userId }) {
     </ul>
   );
 }
->>>>>>> selfstudy
+
 
 export default MakeProblem;
       
