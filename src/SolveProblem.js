@@ -10,7 +10,23 @@ import useSWR from 'swr';
 
 function SolveProblem () {
     return (
-<p>문제풀이 페이지</p>
+    
+    <>
+    <Header />
+    <div className={styles.text}>문제 풀기!</div>
+
+    <div className={styles.content}>
+    <label>✔정답</label>
+            <div>
+                <input type="text" size={90}  name="solve" placeholder="정답 작성하기" className={styles.hight} />
+            </div>
+    </div>
+
+    
+    
+    
+    </>
+
     );
 }
 

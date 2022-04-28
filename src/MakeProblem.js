@@ -15,7 +15,7 @@ function MakeProblem({ userId }) {
 
   useEffect(() => {
     window
-      .fetch(`https://3.38.227.105:8080/question/create/`)   //${userId}
+      .fetch(`http://3.38.227.105:8080/question/create/${userId}`)   //
       .then((res) => res.json())
       .then((user) => {
         setUser(user);
@@ -95,6 +95,5 @@ export default MakeProblem;
 
     );
 }
-
 
 */
