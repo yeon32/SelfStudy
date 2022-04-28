@@ -17,7 +17,7 @@ export default function Test () {
 
   return (
       <div>
-       /* {item.map((item, index) => (
+        {item.map((item, index) => (
               <div key={index}>
               <p> {item.question_id}</p>
               <p> {item.wrong}</p>
@@ -27,7 +27,7 @@ export default function Test () {
               <p> {item.classification} </p>
               </div>
           ))}
-          */
+          
 
         </div>
   )
