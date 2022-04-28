@@ -6,16 +6,32 @@ import styles from './MakeProblem.module.css'
 import Footer from './Footer.js';
 import axios from 'axios';
 import useSWR from 'swr';
+import userEvent from '@testing-library/user-event';
 
-const fetcher = url => fetch(url).then(r => r.json())
+function MakeProblem({ userId }) {
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
+  const [error, setError] = useState(null);
 
-export default function Test () {
-    let url = "http://3.38.227.105:8080/question/create"
-    const { data :item , error } = useSWR(url, fetcher); 
-    if (error) return "에러발생";
-    if(!item) return "로딩중";
+  useEffect(() => {
+    window
+      .fetch(`http://3.38.227.105:8080/question/create/${userId}`)   //
+      .then((res) => res.json())
+      .then((user) => {
+        setUser(user);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  }, [userId]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error!</p>;
 
   return (
+<<<<<<< HEAD
       <div>
         {item.map((item, index) => (
               <div key={index}>
@@ -32,14 +48,22 @@ export default function Test () {
         </div>
   )
       }
+=======
+    <ul>
+      <li>question_id: {user.question_id}</li>
+      <li>wrong: {user.wrong}</li>
+      <li>user_id: {user.user_id}</li>
+      <li>question: {user.question}</li>
+      <li>answer: {user.answer}</li>
+      <li>classification: {user.classification}</li>
+    </ul>
+  );
+}
+>>>>>>> selfstudy
 
+export default MakeProblem;
       
-
-
-
-
-      /*
-
+/*
       return (
         <>
         <div className={styles.bgcolor}>
@@ -91,8 +115,4 @@ export default function Test () {
     );
 }
 
-
 */
-
-
-
