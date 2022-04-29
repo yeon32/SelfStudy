@@ -22,7 +22,18 @@ function SolveProblem () {
             </div>
     </div>
 
-    
+    <div className={styles.beforebutton}>
+      <Button variant="primary" size="lg">
+        이전 
+      </Button>
+     </div> 
+     <div className={styles.afterbutton}>
+      <Button variant="primary" size="lg">
+        다음
+      </Button>
+     </div>
+
+     <Footer />    
     
     
     </>
