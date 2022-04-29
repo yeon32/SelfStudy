@@ -8,6 +8,7 @@ import axios from 'axios';
 import useSWR from 'swr';
 import userEvent from '@testing-library/user-event';
 
+
 function MakeProblem({ userId }) {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
@@ -15,7 +16,17 @@ function MakeProblem({ userId }) {
 
   useEffect(() => {
     window
+<<<<<<< HEAD
       .fetch(`http://3.38.227.105:8080/question/create/${userId}`)   
+=======
+      .fetch(`http://3.38.227.105:8080/question/create/${userId}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "applicaion/json",
+        }
+      })
+      
+>>>>>>> selfstudy
       .then((res) => res.json())
       .then((user) => {
         setUser(user);
@@ -45,7 +56,13 @@ function MakeProblem({ userId }) {
 
 
 export default MakeProblem;
+<<<<<<< HEAD
   
+=======
+
+
+   
+>>>>>>> selfstudy
 /*
  
 function MakeProblem() {
