@@ -24,14 +24,14 @@ IT 동아리 J2KB 포니콘 프로젝트 "공부는 셀프입니다"
 이를 해결하기 위해 간단히 문제를 출제 할 수 있는 서비스를 만들어보았습니다.
 
 
-## Skill
+## 사용한 기술
 
 - React
 - CSS
 
 
 
-## Results
+## 구현 화면
 
 로그인,회원가입 페이지
 <img width="1512" alt="2022-04-29_5 52 49" src="https://user-images.githubusercontent.com/93962252/169647519-a9da0902-66b0-4fc3-ae93-55bfa64e1d8b.png">
